@@ -1,1 +1,1 @@
-# HackerEarth solutions of various problems
+# HackerRank solutions of various Data Structure problems
