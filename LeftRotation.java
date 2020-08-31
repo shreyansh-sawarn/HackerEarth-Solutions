@@ -19,7 +19,6 @@ public class LeftRotation {
             crtArray[count] = arr[i];
             count++;
         }
-
         for (int i = 0; i < crtArray.length; i++) {
             System.out.print(crtArray[i] + " ");
         }
