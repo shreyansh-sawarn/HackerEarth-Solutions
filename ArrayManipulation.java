@@ -1,5 +1,5 @@
 import java.util.Scanner;
-ublic class ArrayManipulation {
+public class ArrayManipulation {
 	static long arrayManipulation(int n, int[][] queries) {
 		long outputArray[] = new long[n + 2];
 		for (int i = 0; i < queries.length; i++) {
