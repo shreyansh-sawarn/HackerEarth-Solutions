@@ -1,6 +1,5 @@
 import java.io.*;
 import java.util.*;
-
 public class QHEAP1 {
     static int a[];
     static int c = 0;
