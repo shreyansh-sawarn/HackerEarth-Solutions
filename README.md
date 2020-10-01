@@ -1,1 +1,1 @@
-# HackerRank solutions of various Data Structure problems
+# HackerRank solutions of various problems based on Data Structures and Algorithms
