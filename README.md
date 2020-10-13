@@ -1,1 +1,1 @@
-# HackerRank solutions of various problems based on Data Structures and Algorithms
+# HackerRank solutions of practice problems on Data Structures, Algorithms and Linux Shell.
