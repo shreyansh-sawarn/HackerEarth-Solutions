@@ -57,5 +57,4 @@ for ((i=1;i<=$SCREENR;i++)) do
     done
     echo ""
 done
-
 exit 0
