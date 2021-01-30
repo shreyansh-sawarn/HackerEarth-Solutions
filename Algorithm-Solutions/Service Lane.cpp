@@ -1,7 +1,5 @@
-
 #include <iostream>
 using namespace std;
-
 int w[100000];
 
 int main() {
