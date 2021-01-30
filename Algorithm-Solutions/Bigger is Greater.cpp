@@ -1,31 +1,37 @@
-#include <bits/stdc++.h>
-
+#include <algorithm>
+#include <iostream>
+#include <string>
 using namespace std;
 
-// Complete the biggerIsGreater function below.
-string biggerIsGreater(string w) {
-
-
-}
-
-int main()
-{
-    ofstream fout(getenv("OUTPUT_PATH"));
-
-    int T;
-    cin >> T;
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
-
-    for (int T_itr = 0; T_itr < T; T_itr++) {
-        string w;
-        getline(cin, w);
-
-        string result = biggerIsGreater(w);
-
-        fout << result << "\n";
+int main() {
+  int t;
+  cin >> t;
+  while (t--) {
+    string s;
+    cin >> s;
+    int pos = -1;
+    for (int i = s.size() - 1; i > 0; i--) {
+      if (s[i] > s[i - 1]) {
+        pos = i;
+        break;
+      }
     }
-
-    fout.close();
-
-    return 0;
+    if (pos == -1) {
+      cout << "no answer" << endl;
+    } else {
+      int minVal = 1000, maxIdx = -1;
+      for (int i = pos; i < s.size(); i++) {
+        if (s[i] > s[pos - 1]) {
+          if (s[i] < minVal || (s[i] == minVal && i > maxIdx)) {
+            minVal = s[i];
+            maxIdx = i;
+          }
+        }
+      }
+      swap(s[pos - 1], s[maxIdx]);
+      reverse(s.begin() + pos, s.end());
+      cout << s << endl;
+    }
+  }
+  return 0;
 }
