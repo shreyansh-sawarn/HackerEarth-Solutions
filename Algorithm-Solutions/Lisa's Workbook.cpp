@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int main() {
+int main() 
+ {
   int n, k, t, page = 1, ans = 0;
   cin >> n >> k;
   for (int i = 1; i <= n; i++) {
