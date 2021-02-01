@@ -1,29 +1,22 @@
-#include <bits/stdc++.h>
-
+#include <iostream>
+#include <string>
 using namespace std;
 
-/*
- * Complete the timeConversion function below.
- */
-string timeConversion(string s) {
-    /*
-     * Write your code here.
-     */
-
-}
-
-int main()
-{
-    ofstream fout(getenv("OUTPUT_PATH"));
-
-    string s;
-    getline(cin, s);
-
-    string result = timeConversion(s);
-
-    fout << result << "\n";
-
-    fout.close();
-
-    return 0;
+int main() {
+  string str;
+  cin >> str;
+  int h = (str[0] - '0') * 10 + (str[1] - '0');
+  if (str[8] == 'A') {
+    if (h < 12) {
+      cout << str.substr(0, 8) << endl;
+    } else {
+      cout << "00" << str.substr(2, 6) << endl;
+    }
+  } else {
+    if (h < 12) {
+      h += 12;
+    }
+    cout << h << str.substr(2, 6) << endl;
+  }
+  return 0;
 }
