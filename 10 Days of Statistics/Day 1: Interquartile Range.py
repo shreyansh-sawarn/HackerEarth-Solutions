@@ -18,4 +18,5 @@ ARRAY = sorted(ARRAY)
 
 # Find interquartile_range
 INTERQUARTILE_RANGE = float(find_median(ARRAY[len(ARRAY) // 2 + len(ARRAY) % 2:]) - find_median(ARRAY[:len(ARRAY)//2]))
+
 print(INTERQUARTILE_RANGE)
