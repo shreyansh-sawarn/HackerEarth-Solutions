@@ -36,5 +36,4 @@ for i in NUMBER:
                 MODE = NUMBER[0]
             else:
                 MODE = i
-
 print(MODE)
